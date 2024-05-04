@@ -19,7 +19,7 @@ public class GetUserOrdersTest {
         orderClient = new OrderClient();
         user = UserGenerator.base();
         userClient = new UserClient();
-        ValidatableResponse response = new UserClient().addUser(user);
+        new UserClient().addUser(user);
 
         ValidatableResponse loginResponse = new UserClient().login(UserCredentials.from(user));
         accessToken = loginResponse.extract().path("accessToken");

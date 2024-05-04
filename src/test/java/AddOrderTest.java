@@ -24,7 +24,7 @@ public class AddOrderTest {
         userClient = new UserClient();
         orderClient = new OrderClient();
         user = UserGenerator.base();
-        ValidatableResponse response = userClient.addUser(user);
+        userClient.addUser(user);
         accessToken = userClient.login(UserCredentials.from(user)).extract().path("accessToken");
     }
 

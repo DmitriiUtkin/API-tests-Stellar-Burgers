@@ -10,7 +10,6 @@ public class UpdateUserTest {
     private UserClient userClient;
     private User user;
     private String accessToken;
-    private String refreshToken;
 
     @Before
     public void setUp() {
